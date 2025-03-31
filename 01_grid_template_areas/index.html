@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .grid-container {
+            border: 3px solid #eaea;
+            display: grid;
+            grid-template-areas: 
+            'header header header header' 
+            'sidebar mainmenu mainmenu mainmenu' 
+            'footer footer footer footer';
+        }
+
+        .box{
+            border: 2px solid #fff;
+            padding: 10px;
+            color: #fff;
+        }
+        .box1{
+            background-color: #229ecfaa;
+        }
+        .box2{
+            background-color: #c92525;
+        }
+        .box3{
+            background-color: #1c45ca;
+        }
+        .box4{
+            background-color: #c6138d;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="box1 box" style="grid-area: header;">Header</div>
+        <div class="box2 box" style="grid-area: sidebar;">Sidebar</div>
+        <div class="box3 box" style="grid-area: mainmenu;">Main</div>
+        <div class="box4 box" style="grid-area: footer;">Footer</div>
+    </div>
+</body>
+
+</html>
