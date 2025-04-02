@@ -574,10 +574,6 @@ video {
   display: flex;
 }
 
-.h-\[400px\] {
-  height: 400px;
-}
-
 .h-\[100px\] {
   height: 100px;
 }
@@ -602,17 +598,22 @@ video {
   justify-content: center;
 }
 
-.rounded-sm {
-  border-radius: 0.125rem;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
 }
 
 .bg-\[\#1a1a1a\] {
   --tw-bg-opacity: 1;
   background-color: rgb(26 26 26 / var(--tw-bg-opacity, 1));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
 }
 
 .bg-blue-700 {
@@ -638,41 +639,6 @@ video {
 .bg-orange-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
-}
-
-.bg-teal-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 184 166 / var(--tw-bg-opacity, 1));
-}
-
-.bg-teal-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 118 110 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
-}
-
-.bg-sky-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity, 1));
-}
-
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity, 1));
-}
-
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
-}
-
-.bg-green-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 253 244 / var(--tw-bg-opacity, 1));
 }
 
 .p-2 {
@@ -725,24 +691,12 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
-  .sm\:col-span-8 {
-    grid-column: span 8 / span 8;
-  }
-
   .sm\:grid {
     display: grid;
   }
 
   .sm\:w-\[600px\] {
     width: 600px;
-  }
-
-  .sm\:grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .sm\:grid-cols-3 {
@@ -765,14 +719,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
-  .md\:col-span-8 {
-    grid-column: span 8 / span 8;
-  }
-
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
   }
