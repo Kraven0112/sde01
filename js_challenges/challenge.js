@@ -35,7 +35,7 @@ for(let i = 1; i <= 10; i++){
 // console.log(`Total sum from 1 to 10 is ${sum}`)
 
 
-// calculate 10! means of fibonacci of 10
+// calculate 10! means of factorial of 10
 
 let total = 1
 
@@ -75,4 +75,14 @@ let oddNum = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21,
     89, 91, 93, 95, 97, 99]
 
 let mySum = oddNum.reduce((acc,current) => acc + current , 0)
-console.log(mySum)
+
+
+// calculate the average of the number of an array of numbers
+let myNumbers = [10,20,30,40,50,60,70,80,90,100]
+let myTotal = 0
+
+myNumbers.map((element,index)=> myTotal= myTotal + element)
+
+let myAverage = myTotal / myNumbers.length
+
+console.log(`Average of the number of an array of number is ${myAverage}`);
