@@ -37,4 +37,9 @@ function parent(num1){
 }
 
 let totalResult = parent(4)(5)(10,10)
-console.log(totalResult)
+// console.log(totalResult)
+
+
+const longestWord = (array)=>{
+    return array.reduce((acc,current) => acc.length > current.length ? acc : current, "")
+}
