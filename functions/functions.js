@@ -43,3 +43,24 @@ let totalResult = parent(4)(5)(10,10)
 const longestWord = (array)=>{
     return array.reduce((acc,current) => acc.length > current.length ? acc : current, "")
 }
+
+let longestNameOfFruits = ["apple", "banana", "pie", "pineapple", "apricots"]
+
+console.log(longestWord(longestNameOfFruits))
+
+// function to convert fahrenheit to celsius 
+
+function fahrenheitToCelsius(fahrenheit){
+    return (fahrenheit - 32) * 5 / 9
+}
+
+// function to convert celsius to fahrenheit 
+function celsiusTofahrenheit(celsius){
+    return (celsius * 9 / 5) + 32
+}
+
+let celsius = `${fahrenheitToCelsius(98.6)}° C `
+let fahrenheit = `${celsiusTofahrenheit(37)} ° F`
+
+// console.log(`Temperature in celsius : ${celsius} `)
+// console.log(`Temperature in fahrenheit : ${fahrenheit} `)
