@@ -8,6 +8,10 @@ class BankAccount {
     #accountType = "Saving Account"
     #balance = 0
 
+    getBalance(){
+        return `Available balance : ${this.#balance}`
+    }
+
     depositAmount(amount){
         this.#balance += amount
         return `Deposit amount : Rs.${amount} || Available balance : Rs.${this.#balance}`
@@ -19,8 +23,7 @@ class BankAccount {
 
     withdraw(amount){
         this.#balance -= amount
-
-        return `Withdrawal amount : Rs.${amount} || Available balance : Rs.${this.#balance}`
+        return `Withdrawal amount : Rs.${amount}`
     }
 }
 
@@ -28,6 +31,5 @@ let account123 = new BankAccount()
 console.log(account123.depositAmount(1000000));
 console.log(account123.accountDetail());
 console.log(account123.withdraw(90000));
-
-
+console.log(account123.getBalance());
 
