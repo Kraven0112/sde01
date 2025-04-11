@@ -4,9 +4,10 @@ body{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     cursor:pointer;
+    text-wrap: wrap;
 }
 section{
-    margin-bottom:10px ;
+    margin-bottom:50px ;
     padding: 0;
 }
 h2{
@@ -49,4 +50,13 @@ ul{
     height: 400px;
     border-radius: 50%;
     border: 2px solid #1a1a1a;
+}
+.myback{
+    background-color: #1aceaf;
+}
+
+input{
+    padding: 9px;
+    width: 300px;
+    font-size: 1.1rem;
 }

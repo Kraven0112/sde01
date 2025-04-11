@@ -52,9 +52,20 @@ document.getElementById("teaball").addEventListener('click',function(event){
 // challenge 8
 
 document.getElementById('changeBackGround').addEventListener('click', function(){
-    document.getElementById('diver').style.backgroundColor = "#1a1aca"
+    document.getElementById('diver').classList.toggle('myback')
 })
 
-document.getElementById('changeBackGround').addEventListener('dblclick',function(){
-    document.getElementById('diver').style.backgroundColor = "#ffcaca"
+
+// challenge 9
+document.getElementById('myform').addEventListener('submit', function(event){
+    event.preventDefault()
+
+    let feedback = document.getElementById('feedback').value
+
+    document.getElementById('displayFeedback').textContent = `Feedback is : ${feedback}`
+})
+
+// challenge 10
+document.addEventListener('DOMContentLoaded', function (){
+    document.getElementById('loadDOM').textContent = "DOMContentLoaded Successfully !!"
 })
