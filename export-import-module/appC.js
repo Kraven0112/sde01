@@ -1,4 +1,4 @@
-const operation = require("./operationC.js").default
+const operation = require("./operationC.js")
 
 
 console.log(operation.getRandomNumber());

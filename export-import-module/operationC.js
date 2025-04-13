@@ -12,7 +12,7 @@ function getCubic(num) {
     return num ** 3
 }
 
-export default {
+module.exports = {
     getCubic,
     getDoubleScore,
     getRandomNumber
