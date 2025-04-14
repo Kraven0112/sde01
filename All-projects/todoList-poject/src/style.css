@@ -1,0 +1,19 @@
+.list {
+    padding: 5px;
+    background-color: #1a1a1a;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.mybutton {
+    padding: 5px 10px;
+    background: #dd0d6e;
+    border-radius: 5%;
+}
+
+.mybutton:hover {
+    background-color: #1674a0;
+}

@@ -1,6 +1,10 @@
 /*
 A generator is a special type of function that can pause the execution and resume it later.
 It uses yield keyword to produce the value one at a time.
+
+.next() method is used to access next data from data structure
+
+.value takes value from data
 */
 
 function* myGenerator(){
