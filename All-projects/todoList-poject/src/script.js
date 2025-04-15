@@ -41,6 +41,12 @@ document.addEventListener('DOMContentLoaded', function () {
         li.classList.add('list')
         li.querySelector('button').classList.add('mybutton')
 
+        li.addEventListener('click',function(){
+            li.classList.toggle('complete')
+            task.complete = !task.complete
+            saveInLocalStorage()
+        })
+
         li.querySelector('.mybutton').addEventListener('click',function(event) {
             event.stopPropagation()
             taskList = taskList.filter(t => t.id !== task.id)
