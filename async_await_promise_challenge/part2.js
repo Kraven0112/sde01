@@ -80,13 +80,13 @@ function* fibonacciGenerator(){
 }
 
 const generator = fibonacciGenerator()
-console.log(generator.next().value);
-console.log(generator.next().value);
-console.log(generator.next().value);
-console.log(generator.next().value);
-console.log(generator.next().value);
-console.log(generator.next().value);
-console.log(generator.next().value);
-console.log(generator.next().value);
-console.log(generator.next().value);
-console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);

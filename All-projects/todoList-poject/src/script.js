@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
         saveInLocalStorage()
         getItemFromLocalStorage(taskObject)
         todoValue.value = "" //clear input value
-        console.log(taskList);
     })
 
 
