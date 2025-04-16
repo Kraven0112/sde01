@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather_app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="mainSection">
+        <h1 style="font-size: 30px;">Weather-App</h1>
+        <div id="inputSection">
+            <input id="inputCity" type="text" placeholder="Type city name" autocomplete="off">
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="displaySection" class="hidden">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+        </div>
+        <div id="errorSection" class="hidden">
+            <p>City name is invalid !!</p>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
