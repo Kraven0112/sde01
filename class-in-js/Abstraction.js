@@ -1,6 +1,6 @@
 /*
-Encapsulation means hiding the complexity and logic behind every functionalities and show essential data and functionalities.
-Encapsulation => showing essential and hiding complexity
+Abstraction means hiding the complexity and logic behind every functionalities and show essential data and functionalities.
+Abstraction => showing essential features and hiding complexity and unnecessary implementations.
 */
 
 class Mobile{
