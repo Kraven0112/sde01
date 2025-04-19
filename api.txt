@@ -1,3 +1,9 @@
 openweathermap api is given below :
 
 https://api.openweathermap.org/data/2.5/weather?q=kathmandu&units=metric&appid=179201cf4a2038abcb731df735f5138e
+
+
+
+
+word and meaning api
+https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
