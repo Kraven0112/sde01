@@ -7,3 +7,9 @@ https://api.openweathermap.org/data/2.5/weather?q=kathmandu&units=metric&appid=1
 
 word and meaning api
 https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
+
+
+image search api
+page = 1
+access kry for image search api = "RZEIOVfPhS7vMLkFdd2TSKGFBS4o9_FmcV1Nje3FSjw"
+`https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${accessKey}`
