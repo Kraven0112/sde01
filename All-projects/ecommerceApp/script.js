@@ -4,13 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const emptyMessage = document.getElementById('emptyMessage')
     const totalAmount = document.getElementById('totalAmount')
 
-    let products = [
-        { id: Date.now(), name: "Product 1", price: 29.99 },
-        { id: Date.now(), name: "Product 2", price: 25.99 },
-        { id: Date.now(), name: "Product 3", price: 39.99 },
-        { id: Date.now(), name: "Product 4", price: 9.99 },
-        { id: Date.now(), name: "Product 5", price: 19.99 },
-    ] || JSON.parse(localStorage.getItem('cartItems')) 
+    let products = JSON.parse(localStorage.getItem("expenses")) || JSON.parse(localStorage.getItem('cartItems'))
 
     let cart =JSON.parse(localStorage.getItem('cardItems')) ||[]
 
@@ -22,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const li = document.createElement('li')
         li.innerHTML = `
         <span>${product.name}</span>
-        <span>$${product.price}</span>
+        <span>$${product.amount}</span>
         <button id="buy">Buy</button>
         <button id="addToCart">Add To Cart</button>
         `
@@ -32,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             event.stopPropagation()
             products = products.filter(item => item.id !== product.id)
             addToCart(product)
-            totalPrice += product.price
+            totalPrice += product.amount
             totalAmount.textContent = `Total Amount : $${totalPrice.toFixed(2)}`
             addToLocalStorage()
         })
@@ -53,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const li = document.createElement('li')
         li.innerHTML = `
         <span>${product.name}</span>
-        <span>$${product.price}</span>
+        <span>$${product.amount}</span>
         <button id="buy">Buy</button>
         <button id="remove">remove</button>
         `

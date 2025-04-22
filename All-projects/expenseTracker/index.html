@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense - Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="intro">Expense Tracker</h1>
+
+    <!-- expenses name and amount -->
+    <form id="expenseForm">
+        <input id="expenseName" type="text" placeholder="Name of expense........" autocomplete="off">
+        <input id="expenseAmount" type="number" placeholder="Amount" autocomplete="off">
+        <button id="submitBtn" type="submit">Add Expense</button>
+    </form>
+
+    <!-- expenses disply -->
+    <div id="expensesList">
+        <ul id="expenses">
+
+        </ul>
+
+        <p class="amount"><span id="totalAmt">Total amount : $0.00</span></p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

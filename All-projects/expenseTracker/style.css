@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#intro {
+    text-align: center;
+    padding: 10px;
+    font-family: cursive;
+    color: #430ead;
+    box-shadow: 10px 1px 20px #430ead;
+}
+
+#expenseForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    column-gap: 10px;
+}
+
+input {
+    outline: none;
+    padding: 8px 5px;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    border: 2px solid #430ead;
+}
+
+input::placeholder {
+    color: #430ead;
+}
+
+#expenseName {
+    width: 320px;
+}
+
+#expenseAmount {
+    width: 200px;
+}
+
+#submitBtn {
+    outline: none;
+    padding: 8px 6px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background-color: #04303c;
+    color: #fff;
+}
+
+#expensesList {
+    padding: 2px 10px;
+    margin-top: 25px;
+}
+
+#expenses {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    list-style-type: none;
+}
+
+#expenses>li {
+    text-align: center;
+    padding: 8px;
+    margin-top: 5px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    background-color: #022b36;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#expenses>li>button{
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.amount {
+    margin-top: 50px;
+    padding: 10px 5px;
+    background-color: #04303c;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: right;
+}
