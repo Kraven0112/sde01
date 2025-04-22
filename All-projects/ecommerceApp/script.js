@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
         li.querySelector('#remove').addEventListener('click', function(event){
             event.stopPropagation()
             addToLocalStorage()
-            products = products.filter(item => deletedItem(item.id === product.id))
-            totalPrice -= product.price
+            products = products.filter(item => item.id === product.id)
+            totalPrice -= product.amount
             totalAmount.textContent = `Total Amount : $${totalPrice.toFixed(2)}`
             li.remove()
         })
