@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiplication_App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <h1 id="intro">Multiplication Quiz App</h1>
+
+    <div id="container">
+        <!-- score counter display -->
+        <p id="score">Score : 0</p>
+
+        <!-- question display -->
+        <h2 id="question">What is <span id="multiplicand">9</span> multiply by <span id="multiplier">2</span> ?</h2>
+
+        <!-- form -->
+        <form id="inputForm">
+            <input id="answer" type="text" autocomplete="off" placeholder="Type answer">
+
+            <p id="wrongMessage" class="hidden">Wrong Message !!</p>
+
+            <button id="submitBtn" type="submit">Submit</button>
+        </form>
+    </div>
+
     <script src="./script.js"></script>
 </body>
+
 </html>
