@@ -6,24 +6,24 @@
     <title>All_JS_Projects</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="style.css">
-    <script defer src="./script.js"></script>
 </head>
 <body class="bg-[#1a1a1a] text-white cursor-pointer">
     <h1 class="text-center text-4xl font-bold text-emerald-300 mt-5">All JavaScript Projects In One</h1>
 
     <!-- Todo App -->
-
-     <section class="mt-10 max-w-[1300px] mx-auto text-center border p-2 bg-teal-800 rounded-md">
+    
+    <section class="mt-10 max-w-[1300px] mx-auto text-center border p-2 bg-teal-800 rounded-md">
         <h2 class="text-3xl text-green-300 font-bold">Todo App</h2>
-        <div class="mt-5">
-            <input id="taskValue" type="text" placeholder="Add new task" class="bg-[#1a1a1a] px-2 py-2 text-xl w-[300px] sm:w-[400px] md:w-[600px] outline-none rounded-md">
-            <button  id="addButton" class="mx-3 bg-[#1a1a1a] w-[100px] py-2 rounded-md text-xl m-2">Add</button>
-        </div>
+        <form id="myForm" class="mt-5">
+            <input id="taskValue" type="text" placeholder="Add new task" autocomplete="off" class="bg-[#1a1a1a] px-2 py-2 text-xl w-[300px] sm:w-[400px] md:w-[600px] outline-none rounded-md">
+            <button type="submit"  id="addButton" class="mx-3 bg-[#1a1a1a] w-[100px] py-2 rounded-md text-xl m-2">Add</button>
+        </form>
         <div>
             <ul id="allTask" class="list-none">
-
+                
             </ul>
         </div>
-     </section>
+    </section>
+    <script src="./script.js"></script>
 </body>
 </html>

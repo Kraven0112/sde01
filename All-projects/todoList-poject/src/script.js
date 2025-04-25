@@ -2,14 +2,16 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     const todoValue = document.getElementById('taskValue')
-    const addTaskButton = document.getElementById('addButton')
+    const form = document.getElementById('myForm')
     const todoList = document.getElementById('allTask')
 
     let taskList = JSON.parse(localStorage.getItem("tasks")) || []
 
     taskList.forEach(task => getItemFromLocalStorage(task))
     
-    addTaskButton.addEventListener('click', function () {
+    form.addEventListener('click', function (event) {
+        event.preventDefault()
+        
         const taskValue = todoValue.value.trim()
 
         if (taskValue === "") return;
