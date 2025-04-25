@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('searchSection')
     const input = document.getElementById('input');
-    const searchBtn = document.getElementById('searchBtn')
     const displaySection = document.getElementById('displaySection')
     const errorMessage = document.getElementById('error')
 
-    searchBtn.addEventListener('click', async function () {
+    form.addEventListener('click', async function (event) {
+        event.preventDefault()
+        
         const inputItem = input.value.trim()
 
 

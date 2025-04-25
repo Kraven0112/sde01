@@ -4,21 +4,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-color: #1a1a1a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-
 #mainSection {
-    background-color: #051d3f;
-    padding: 1rem;
+    background-color: #0a0909;
+    padding: 1.5rem 2rem;
     color: #fff;
     border-radius: 10px;
     text-align: center;
-    border: 2px solid #4a7abe;
+    justify-self: center;
+    box-shadow: 5px 3px 10px #2e0404;
+    max-width: 700px;
+    margin-top: 5rem;
 }
 
 #inputSection {
@@ -26,13 +21,13 @@ body {
 }
 
 #inputSection input {
-    padding: 8px 8px;
+    padding: 10px 12px;
     width: 320px;
     background-color: #030e1d;
     border: none;
     outline: none;
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-right: 10px;
     border-radius: 5px;
 }
@@ -42,8 +37,8 @@ body {
 }
 
 #inputSection button {
-    padding: 7px 9px;
-    font-size: 1.1rem;
+    padding: 10px 11px;
+    font-size: 1.3rem;
     background-color: #030e1d;
     color: #fff;
     outline: none;
@@ -55,21 +50,52 @@ body {
 #errorSection p {
     color: #d61b1b;
     margin-top: 10px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    justify-self: left;
 }
 #displaySection{
     margin-top: 20px;
 }
-#displaySection p{
-    margin-top: 15px;
-    font-size: 1.8rem;
-    color: #d1b10f;
-}
 #displaySection h2{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #0ec9e2;
 }
+
+#temperatureDiv{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px 20px;
+    margin-top: 10px;
+}
+
+#temperatureDiv p{
+    margin-top: 15px;
+    font-size: 1.8rem;
+}
+
+#temperature{
+    color: #99a7f3;
+}
+
+#description{
+    color: #eea9a9;
+}
+
+#humidity{
+    color: #e7a86a;
+}
+
+#maxTemp{
+    color: #7ee166;
+}
+
+#minTemp{
+    color: #f1b99d;
+}
+
 .hidden {
     display: none;
 }

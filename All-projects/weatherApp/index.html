@@ -11,15 +11,19 @@
 <body>
     <section id="mainSection">
         <h1 style="font-size: 30px;">Weather-App</h1>
-        <div id="inputSection">
+        <form id="inputSection">
             <input id="inputCity" type="text" placeholder="Type city name" autocomplete="off">
-            <button id="searchButton">Search</button>
-        </div>
+            <button type="submit" id="searchButton">Search</button>
+        </form>
         <div id="displaySection" class="hidden">
             <h2 id="cityName"></h2>
-            <p id="temperature"></p>
-            <p id="description"></p>
-            <p id="humidity"></p>
+            <div id="temperatureDiv">
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+                <p id="maxTemp"></p>
+                <p id="minTemp"></p>
+            </div>
         </div>
         <div id="errorSection" class="hidden">
             <p>City name is invalid !!</p>
@@ -28,4 +32,5 @@
 
     <script src="./script.js"></script>
 </body>
+
 </html>
