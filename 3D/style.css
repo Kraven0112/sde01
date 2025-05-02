@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+#img {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+#myDiv {
+    width: 250px;
+    height: 250px;
+    justify-self: center;
+    transform: rotateX(51deg) rotateY(13deg) rotateZ(15deg);
+    transform-style: preserve-3d;
+    border-radius: 32px;
+    transition: .4s ease-in-out transform;
+}
