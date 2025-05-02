@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2f2603;
+}
+
+#imageContainer {
+    width: 700px;
+    height: 380px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 25px #6c5404;
+    position: relative;
+}
+
+#myImg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+span{
+    font-size: 1.1rem;
+}
+
+#backward-Btn{
+    position: absolute;
+    right: 95%;
+    color: aliceblue;
+    top: 50%;
+    height: 100%;
+}
+#forward-Btn{
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    color: aliceblue;
+    height: 100%;
+}
