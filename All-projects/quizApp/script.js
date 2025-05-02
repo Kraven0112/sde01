@@ -57,6 +57,11 @@ document.addEventListener('DOMContentLoaded', function () {
             answerList: ["Huangho","Beijing","Wuangho","Muangho"],
             answer: "Beijing"
         },
+        {
+            question: "Who is the father of modern physics ?",
+            answerList: ["Albert Einstein","Galelio Galile","Adam Smith","Wilson Fisk"],
+            answer: "Albert Einstein"
+        }
     ]
 
     startBtn.addEventListener('click', startQuiz)
