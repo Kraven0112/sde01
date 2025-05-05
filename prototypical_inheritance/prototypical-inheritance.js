@@ -1,11 +1,15 @@
-// prototypical inheritance is a mechanism that allows an object to inherit properties and methods from another objects
+/*
+prototypical inheritance is a mechanism that allows an object to inherit properties and methods from another objects
+
+Object.create(any_object) is used to create prototypical inheritance between objects.
+*/
 
 let user1 = {
-    userName : "Sushil",
-    greet(){
+    userName: "Sushil",
+    greet() {
         console.log(`Hello, I am Sushil here.`)
     },
-    start(){
+    start() {
         console.log(`Let's start coding.`);
     }
 }
