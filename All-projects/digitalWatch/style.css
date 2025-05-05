@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1a1a1a;
+}
+
+#clockContainer {
+    padding: 30px 35px;
+    box-shadow: 5px 5px 30px #a89696;
+    justify-self: center;
+    border-radius: 10px;
+    margin-top: 8rem;
+}
+
+#intro {
+    text-align: center;
+    font-size: 5.5rem;
+    color: #0bbde9;
+}
+
+#actualtime {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #aedee9;
+}
