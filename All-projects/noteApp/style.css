@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+body {
+    background-color: #000;
+}
+
+#intro {
+    text-align: center;
+    padding: 15px;
+    box-shadow: 5px 5px 5px #f0de19;
+    margin-top: 5px;
+    color: #f0de19;
+}
+
+#noteContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+#addBtn {
+    width: 300px;
+    height: 200px;
+    padding: 20px 40px;
+    font-size: 5rem;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    box-shadow: 2px 3px 5px #f0de19;
+    color: #f0de19;
+    border-radius: 10px;
+
+}
+
+.mynote {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-wrap: wrap;
+    resize: none;
+    text-wrap: wrap;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    box-shadow: 2px 3px 5px #f0de19;
+    color: #f0de19;
+    border-radius: 10px;
+}
+
+.mynote::placeholder{
+    color: #f0de19;
+}
+
+.textcross {
+    text-decoration: line-through;
+}
