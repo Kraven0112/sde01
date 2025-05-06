@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
     const scoreDisplay = document.getElementById('score')
     const multiplicandDisplay = document.getElementById('multiplicand')
     const multiplierDisplay = document.getElementById('multiplier')
@@ -11,22 +11,20 @@ document.addEventListener('DOMContentLoaded', function(){
     let multiplier = generateMultiplier()
 
     displayAllitem()
-    
-    form.addEventListener('submit', function(event){
+
+    form.addEventListener('submit', function (event) {
         event.preventDefault()
-        
-        if(!answerInput) return;
 
         const answerValue = parseInt(answerInput.value.trim())
 
-        if (answerValue === (multiplicand * multiplier) && answerValue !== ""){
-            score  = score + 1
+        if (answerValue === (multiplicand * multiplier) && answerValue !== "") {
+            score = score + 1
             scoreDisplay.textContent = `Score : ${score}`
             wrongMessage.classList.add('hidden')
             multiplicand = generateMultiliplicand()
             multiplier = generateMultiplier()
             displayAllitem()
-        }else{
+        } else {
             wrongMessage.classList.remove('hidden')
         }
 
@@ -34,14 +32,14 @@ document.addEventListener('DOMContentLoaded', function(){
 
     })
 
-    function generateMultiliplicand(){
+    function generateMultiliplicand() {
         return Math.floor(Math.random() * 10)
     }
-    function generateMultiplier(){
+    function generateMultiplier() {
         return Math.floor(Math.random() * 10)
     }
 
-    function displayAllitem(){
+    function displayAllitem() {
         multiplicandDisplay.textContent = multiplicand
         multiplierDisplay.textContent = multiplier
     }
