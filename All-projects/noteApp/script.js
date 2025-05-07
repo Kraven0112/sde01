@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 noteList.push(noteObj)
                 removeNote(note)
-                addToLocalStorage()
             }
         })
 
@@ -53,8 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
             event.stopPropagation()
             event.target.classList.add('textcross')
             setTimeout(function () {
-                noteList.filter(el => (el.id === note.id))
                 event.target.remove()
+                noteList = noteList.filter(el => (el.id !== note.id))
                 addToLocalStorage()
             }, 1500)
         })
