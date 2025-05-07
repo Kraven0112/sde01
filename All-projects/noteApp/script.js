@@ -26,14 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     value: text
                 }
                 noteList.push(noteObj)
-                note.addEventListener('click', function (event) {
-                    event.preventDefault()
-                    event.target.classList.toggle('textcross')
-                    console.log(event.target)
-                })
+                removeNote(note)
                 addToLocalStorage()
             }
         })
+
     }
 
     function addToLocalStorage() {
@@ -47,12 +44,19 @@ document.addEventListener('DOMContentLoaded', function () {
             note.value = el.value
 
             allNoteDisplay.appendChild(note)
+            removeNote(note)
+        })
+    }
 
-            note.addEventListener('click', function (event) {
-                event.preventDefault()
-                event.target.classList.toggle('textcross')
-                console.log(event.target)
-            })
+    function removeNote(note) {
+        note.addEventListener('click', function (event) {
+            event.stopPropagation()
+            event.target.classList.add('textcross')
+            setTimeout(function () {
+                noteList.filter(el => (el.id === note.id))
+                event.target.remove()
+                addToLocalStorage()
+            }, 1500)
         })
     }
 })
