@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    padding: 20px 40px;
+    justify-self: center;
+    margin-top: 50px;
+    box-shadow: 5px 5px 25px #eed6d6;
+    border-radius: 8px;
+}
+
+#intro {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    color: #096784;
+}
+
+#inputField > label {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#birthday {
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    width: 320px;
+    outline: none;
+}
+
+#convertBtn {
+    padding: 5px 10px;
+    font-size: 1.3rem;
+}
+
+#result{
+    text-align: center;
+    margin-top: 18px;
+}
+
+#message{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #eb0b0b;
+}
+
+.hidden{
+    display: none;
+}
