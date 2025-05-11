@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+#container{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    font-size: 2rem;
+}
+#myInput{
+    font-size: 2rem;
+    outline: none;
+    padding: 3px 10px;
+    height: 200px;
+    resize: none;
+}
+
+#result{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.2rem;
+}
