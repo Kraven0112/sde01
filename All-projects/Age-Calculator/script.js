@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             message.classList.add('hidden')
             const age = convertAge(birthday)
-            result.innerHTML = `Your age is ${age} ${age > 1 ? "years" : "year"} old.`
+            result.innerHTML = `Your are ${age} ${age > 1 ? "years" : "year"} old.`
         }
 
         birthdayInput.value = ""
