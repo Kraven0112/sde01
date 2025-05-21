@@ -3,20 +3,23 @@ This is process of manipulating the file in javascript using node js
 
 File Syste is module in node js whihc provides API to interact with files and directories in any operating system.
 
-fs.writeFile(filePath, data)
+fs.writeFileSync(filePath, data) / fs.writeFile(filePath, data)
 - It is used to write data in a file
 - It is used to replace file if it exist
 = It is used to create if it is not exist
 
-fs.readFile(filePath)
+fs.readFileSync(filePath) / fs.readFile(filePath)
 - It is used to read a file if the file is existed.
 
-fs.appendFile(filePath, data)
+fs.appendFileSync(filePath, data) / fs.appendFile(filePath,data)
 - It is used to create file if it is not exist
 - It is used to add data in file
 
-fs.open(filePath, mode)
+fs.openSync(filePath, mode) / fs.open(filePath,mode)
 - It is used to open the description of file for reading or writing the file
+
+fs.unlinkSync(filePath, callback) / fs.unlink(filePath,callback)
+- It is used to unlink or delete the filefrom the directory
 
 Modes in file system :
 r - It is used for read only file. Throws error if file does not exist
@@ -28,7 +31,7 @@ a+ - It is usd for reading and appending. Create file if it is not existed
 */
 
 
-// 
+
 const fs = require('fs')
 const filePath = 'example.json'
 

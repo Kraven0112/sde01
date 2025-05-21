@@ -35,6 +35,18 @@ const readData = () => {
     })
 }
 
+// removing file or deleting file
+const unlinkFile = () => {
+    fs.unlinkSync(filePath, function (error) {
+        if(error){
+            console.log(error)
+            return;
+        }
+
+        console.log("File removed successfully.")
+    })
+}
+
 // process.argv is a property returns array containing command line arguments passed when the Node.js process was launched.
 
 const command = process.argv[2]
@@ -46,6 +58,8 @@ if (command === "add") {
     appendData(argument)
 } else if (command === "read") {
     readData()
+} else if(command === "unlink"){
+    unlinkFile()
 } else {
     console.log("File is not existed !")
 }
